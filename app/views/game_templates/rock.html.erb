@@ -1,0 +1,24 @@
+<div>
+<a href=\"/rock"> Play Rock </a>
+</div>
+<div>
+<a href=\"/paper"> Play Paper </a>
+</div>
+<div>
+<a href=\"/scissors"> Play Scissors </a>
+</div>
+
+<h2> We played rock!</h2>
+
+<h2> They played <%= @random_move %>! </h2>
+<% if @random_move == "scissors" %>
+  <h2> We won! </h2>
+  <% elsif @random_move == "paper" %>
+  <h2> We lost! </h2>
+  <% else%>
+  <h2> We tied! </h2>
+<% end %>
+
+<div>
+<a href/> Rules </a>
+</div>
